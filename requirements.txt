@@ -1,0 +1,9 @@
+# Core runtime (required). The pipeline runs fully offline with only this.
+networkx>=3.0
+
+# Optional extras are in separate files / pyproject extras:
+#   requirements-models.txt   transformers + torch (AraBERT / CAMeLBERT NER)
+#   requirements-camel.txt    camel-tools (CAMeL Tools NER)
+#   requirements-rss.txt      feedparser (RSS collector)
+#   requirements-dev.txt      pytest
+# or: pip install ".[models]" / ".[camel]" / ".[rss]" / ".[dev]"

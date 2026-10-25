@@ -1,0 +1,27 @@
+# Virtual environments
+osint-env/
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# Generated pipeline output (re-create with `run`)
+output/
+output_*/
+
+# Editor / tool local state
+.claude/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Claude Code project instructions (local only)
+CLAUDE.md

@@ -1,0 +1,2 @@
+-r requirements.txt
+feedparser>=6.0

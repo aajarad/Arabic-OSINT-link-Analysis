@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "osint-pipeline"
+version = "1.0.0"
+description = "Ethics-first Arabic OSINT collection and link-analysis pipeline"
+requires-python = ">=3.9"
+dependencies = ["networkx>=3.0"]
+
+[project.optional-dependencies]
+models = ["transformers>=4.30", "torch>=2.0"]
+camel = ["camel-tools>=1.5"]
+rss = ["feedparser>=6.0"]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+osint-pipeline = "osint_pipeline.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["osint_pipeline*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
